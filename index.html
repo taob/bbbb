@@ -1,9 +1,40 @@
 <html>
   <head>
     <title>This is the page title</title>
+    <style>
+      @media (max-width: 550px) {
+        .big-container {
+          display: none;
+        }
+      }
+      @media (min-width: 550px) {
+        .small-container {
+          display: none;
+        }
+      }
+      /* Responsive iFrame */
+      .responsive-iframe-container {
+         position: relative;
+         padding-bottom: 56.25%;
+         padding-top: 30px;
+         height: 0;
+         overflow: hidden;
+      }
+      .responsive-iframe-container iframe,   
+      .vresponsive-iframe-container object,  
+      .vresponsive-iframe-container embed {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+    </style>
   </head>
   <body>
     <p>Hello world</p>
-    <iframe src="https://calendar.google.com/calendar/embed?height=1280&wkst=1&ctz=America%2FToronto&showPrint=0&src=YmlnYm9va2Jpa2VAZ21haWwuY29t&src=NmMyNTM1YTc1ZmEyMDQ4MzdkY2EwMzdjYWE1MzBkZWUzOTc4NjVhZjBiZDkxZWNhMzFlMzI5MzhmMWRmNjQ3OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZThkNzJmZWYxYzhkNDAwMWM5ZTBmZDExZjg5ZDdjOGE3NTVhMGE3NjE1NjIxNDFkN2M3YzNiOWE3YjAzNTk3YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NDEwZjE0ZDNjMDkwMzJmZTU3ZjdmY2U3NmVlMDFiM2Y2MzJjNWMyODg3NGYwODAxM2VhMjgyYjU4NDY2ZDM0ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MDYxNjc4YzdhNDUwMjU3NTIyMmY2MTk5ODEyYmQ1MTQ2MzUxZmE5ZjJkNjJiMmQ2MTJkZGUyNzU2MmM5ZDhjOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=OGU4ZjEwOGU2YzJmOWFiZjE3ZDZjNDJhMTBmZTQ5MzY3NWZiNzM1OGZmZWJhYzQ4OWQxNDgzY2Q1MWUxM2U5ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Nzc5YjNlZWI5OTdjZTQ0NjU5YjQyYWQwZTkwMjUwODY4NTdiNTBhYzhhYmFlY2EyMDkwOTY2ZjllNDkyMjdhMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23666666&color=%23aa0000&color=%23b46000&color=%23aaaa00&color=%2300aa00&color=%2300aaaa&color=%238800ff&color=%23aaaaaa" style="border:solid 1px #777" width="720" height="1280" frameborder="0" scrolling="no"></iframe>
+    <div class="responsive-iframe-container big-container">
+      <iframe src="https://calendar.google.com/calendar/embed?height=1280&wkst=1&ctz=America%2FToronto&showPrint=0&src=YmlnYm9va2Jpa2VAZ21haWwuY29t&src=NmMyNTM1YTc1ZmEyMDQ4MzdkY2EwMzdjYWE1MzBkZWUzOTc4NjVhZjBiZDkxZWNhMzFlMzI5MzhmMWRmNjQ3OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZThkNzJmZWYxYzhkNDAwMWM5ZTBmZDExZjg5ZDdjOGE3NTVhMGE3NjE1NjIxNDFkN2M3YzNiOWE3YjAzNTk3YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NDEwZjE0ZDNjMDkwMzJmZTU3ZjdmY2U3NmVlMDFiM2Y2MzJjNWMyODg3NGYwODAxM2VhMjgyYjU4NDY2ZDM0ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MDYxNjc4YzdhNDUwMjU3NTIyMmY2MTk5ODEyYmQ1MTQ2MzUxZmE5ZjJkNjJiMmQ2MTJkZGUyNzU2MmM5ZDhjOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=OGU4ZjEwOGU2YzJmOWFiZjE3ZDZjNDJhMTBmZTQ5MzY3NWZiNzM1OGZmZWJhYzQ4OWQxNDgzY2Q1MWUxM2U5ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Nzc5YjNlZWI5OTdjZTQ0NjU5YjQyYWQwZTkwMjUwODY4NTdiNTBhYzhhYmFlY2EyMDkwOTY2ZjllNDkyMjdhMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23666666&color=%23aa0000&color=%23b46000&color=%23aaaa00&color=%2300aa00&color=%2300aaaa&color=%238800ff&color=%23aaaaaa" style="border:solid 1px #777" width="720" height="1280" frameborder="0" scrolling="no"></iframe>
+    </div>
   </body>
 </html>
